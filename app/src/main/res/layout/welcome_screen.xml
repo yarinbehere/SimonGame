@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simon Game"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textColor="#eeeeee" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@android:color/darker_gray"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:textSize="10sp"-->
+<!--        android:text="This game is the Android version of the Simon electronic game with its circular design and its four large colored keys: red, green, blue and yellow. Each key is linked to an electronic sound which will help the player to memorize the series of illuminated keys. You will love this memory game!"-->
+<!--        android:textColor="#eeeeee" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/scoreboardButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scoreboard" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        tools:context=".GridXMLActivity">
+
+        <ImageView
+            android:id="@+id/redImageView"
+            android:layout_width="148dp"
+            android:layout_height="93dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red_on"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/greenImageView"
+            android:layout_width="148dp"
+            android:layout_height="93dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/green_on" />
+
+        <ImageView
+            android:id="@+id/blueImageView"
+            android:layout_width="148dp"
+            android:layout_height="133dp"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/blue_on" />
+
+        <ImageView
+            android:layout_width="148dp"
+            android:layout_height="133dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/yellow_on" />
+
+    </GridLayout>
+
+
+</LinearLayout>
