@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simon's Turn!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#eeeeee" />
+
+    <GridLayout
+        android:id="@+id/GridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        tools:context=".GridXMLActivity">
+
+        <ImageButton
+            android:id="@+id/redButton"
+            android:layout_width="170dp"
+            android:layout_height="105dp"
+            android:scaleType="fitCenter"
+            android:background="#000000"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red_off" />
+
+        <ImageButton
+            android:id="@+id/greenButton"
+            android:layout_width="170dp"
+            android:layout_height="105dp"
+            android:scaleType="fitCenter"
+            android:background="#000000"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/green_off" />
+
+        <ImageButton
+            android:id="@+id/blueButton"
+            android:layout_width="170dp"
+            android:layout_height="146dp"
+            android:scaleType="fitCenter"
+            android:background="#000000"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/blue_off" />
+
+        <ImageButton
+            android:id="@+id/yellowButton"
+            android:layout_width="170dp"
+            android:layout_height="146dp"
+            android:scaleType="fitCenter"
+            android:background="#000000"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/yellow_off" />
+
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/gameOrderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="null"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/gameOrderToScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="null"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="#eeeeee" />
+
+
+</LinearLayout>
