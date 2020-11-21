@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Simon Game</string>
+    <string name="posButton">OK</string>
+    <string name="negButton">Cancel</string>
+    <string name="closeButton">Close</string>
+    <string name="difficultyDialogTitle">Change difficulty</string>
+    <string name="scoreDialogTitle">Score Board</string>
 </resources>

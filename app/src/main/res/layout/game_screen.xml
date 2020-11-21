@@ -11,7 +11,7 @@
         android:id="@+id/turnText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Simon's Turn!"
+        android:text="Welcome to Simon game!"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -78,20 +78,20 @@
         android:background="@android:color/darker_gray"/>
 
     <TextView
-        android:id="@+id/gameOrderText"
+        android:id="@+id/simonMovesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="null"
-        android:textSize="17sp"
+        android:textSize="0sp"
         android:layout_gravity="center"
         android:textColor="#eeeeee" />
 
     <TextView
-        android:id="@+id/gameOrderToScoreText"
+        android:id="@+id/playerMovesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="null"
-        android:textSize="17sp"
+        android:textSize="0sp"
         android:layout_gravity="center"
         android:textColor="#eeeeee" />
 

@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.96"
+    tools:context=".ScoreboardActivity" >
+
+    <FrameLayout
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragA"
+            class="com.example.simongame.ScoreFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/row_bg"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/scoreboardTitle"
+            android:layout_width="match_parent"
+            android:background="#000000"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="53dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Scoreboard"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="pressedClose"
+            android:layout_margin="5dp"
+            android:text="Close" />
+
+    </FrameLayout>
+
+</RelativeLayout>

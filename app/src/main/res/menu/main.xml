@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.simongame.SimonActivity" >
+
+
+    <item
+        android:id="@+id/action_scoreboard"
+        android:title="Scoreboard" />
+    <item
+        android:id="@+id/action_difficulty"
+        android:title="Change Difficulty" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>
